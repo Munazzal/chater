@@ -1,6 +1,6 @@
 const WebSocket = require('ws');
 
-const server = new WebSocket.Server({ port: 3000 });
+const server = new WebSocket.Server({ port: 3000, host: '0.0.0.0' });
 
 server.on('connection', (socket) => {
     console.log('Client connected');
@@ -19,4 +19,4 @@ server.on('connection', (socket) => {
     });
 });
 
-console.log('WebSocket server is running on ws://localhost:3000');
+console.log('WebSocket server is running on ws://0.0.0.0:3000');

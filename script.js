@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://localhost:3000');
+const socket = new WebSocket('ws://192.168.123.98:3000'); // Replace with your actual local IP address
 
 socket.onopen = () => {
     console.log('Connected to server');
